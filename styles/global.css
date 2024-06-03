@@ -152,4 +152,42 @@ table {
 
 button {
   cursor: pointer;
+}
+
+@font-face {
+  font-family: "Noto Sans Georgian";
+  src: url("../../assets/fonts/NotoSansGeorgian-VariableFont_wdth,wght.ttf");
+}
+body {
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+body header {
+  background-color: black;
+}
+body header .header-container {
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+body header .header-container .header-content {
+  max-width: 1110px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .underline {
+  max-width: 1110px;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #979797;
 }/*# sourceMappingURL=global.css.map */
