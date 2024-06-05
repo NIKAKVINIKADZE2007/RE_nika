@@ -162,9 +162,6 @@ body {
   font-family: "Noto Sans Georgian", sans-serif;
 }
 
-body {
-  background-color: black;
-}
 body header {
   background-color: black;
 }
@@ -184,10 +181,67 @@ body header .header-container .header-content {
   justify-content: space-between;
   align-items: center;
 }
+body header .header-container .navigation nav ul {
+  display: flex;
+  list-style: none;
+  font-size: 13px;
+}
+body header .header-container .navigation nav ul .list-item {
+  margin-right: 50px;
+}
+body header .header-container .navigation nav ul li a {
+  color: white;
+  font-size: 13px;
+}
 body header .underline {
   max-width: 1110px;
   width: 100%;
   height: 1px;
   margin: 0 auto;
   background-color: #979797;
+}
+
+.section1 {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 632px;
+}
+.section1 .section-container {
+  max-width: 1087px;
+  height: 476px;
+  display: flex;
+  align-items: center;
+  margin-top: 71px;
+}
+.section1 .section-container .div1 {
+  width: 398px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 181px;
+}
+.section1 .section-container .div1 .new-product {
+  font-size: 14px;
+  color: #979797;
+}
+.section1 .section-container .div1 .product-name {
+  color: white;
+  font-weight: bold;
+  font-size: 56px;
+  margin-top: 24px;
+}
+.section1 .section-container .div1 .expirience {
+  width: 349px;
+  font-size: 15px;
+  color: #979797;
+  margin-top: 24px;
+}
+.section1 .section-container .div1 button {
+  width: 160px;
+  height: 48px;
+  background-color: #d87d4a;
+  color: white;
+  font-size: 13px;
+  margin-top: 40px;
 }/*# sourceMappingURL=global.css.map */

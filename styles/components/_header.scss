@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   header {
     background-color: black;
     .header-container {
@@ -17,6 +16,27 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+
+      .navigation {
+        nav {
+          ul {
+            display: flex;
+            list-style: none;
+            font-size: 13px;
+
+            .list-item {
+              margin-right: 50px;
+            }
+
+            li {
+              a {
+                color: white;
+                font-size: 13px;
+              }
+            }
+          }
+        }
       }
     }
     .underline {

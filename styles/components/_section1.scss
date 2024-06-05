@@ -1,0 +1,47 @@
+.section1 {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 632px;
+  .section-container {
+    max-width: 1087px;
+    height: 476px;
+    display: flex;
+    align-items: center;
+    margin-top: 71px;
+
+    .div1 {
+      width: 398px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 181px;
+      .new-product {
+        font-size: 14px;
+        color: #979797;
+      }
+
+      .product-name {
+        color: white;
+        font-weight: bold;
+        font-size: 56px;
+        margin-top: 24px;
+      }
+
+      .expirience {
+        width: 349px;
+        font-size: 15px;
+        color: #979797;
+        margin-top: 24px;
+      }
+      button {
+        width: 160px;
+        height: 48px;
+        background-color: #d87d4a;
+        color: white;
+        font-size: 13px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
