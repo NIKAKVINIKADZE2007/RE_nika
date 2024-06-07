@@ -1,0 +1,42 @@
+.section2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  .section2-container {
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .inner-div {
+      width: 350px;
+      height: 204px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 124px;
+        left: 113px;
+      }
+      h3 {
+        color: #000000;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 116px 0px 15px;
+      }
+      .innerdiv2 {
+        display: flex;
+        align-items: center;
+
+        .shop {
+          color: #000000;
+          opacity: 0.5;
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+}

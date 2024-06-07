@@ -181,6 +181,11 @@ body header .header-container .header-content {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 700px) {
+  body header .header-container .navigation {
+    display: none;
+  }
+}
 body header .header-container .navigation nav ul {
   display: flex;
   list-style: none;
@@ -244,4 +249,46 @@ body header .underline {
   color: white;
   font-size: 13px;
   margin-top: 40px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.section2 .section2-container {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2 .section2-container .inner-div {
+  width: 350px;
+  height: 204px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section2 .section2-container .inner-div img {
+  position: absolute;
+  bottom: 124px;
+  left: 113px;
+}
+.section2 .section2-container .inner-div h3 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 116px 0px 15px;
+}
+.section2 .section2-container .inner-div .innerdiv2 {
+  display: flex;
+  align-items: center;
+}
+.section2 .section2-container .inner-div .innerdiv2 .shop {
+  color: #000000;
+  opacity: 0.5;
+  margin-right: 18px;
 }/*# sourceMappingURL=global.css.map */
