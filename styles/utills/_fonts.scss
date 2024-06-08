@@ -2,6 +2,10 @@
   font-family: 'Noto Sans Georgian';
   src: url('../../assets/fonts/NotoSansGeorgian-VariableFont_wdth\,wght.ttf');
 }
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../assets/fonts/Manrope-VariableFont_wght.ttf');
+}
 body {
-  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
