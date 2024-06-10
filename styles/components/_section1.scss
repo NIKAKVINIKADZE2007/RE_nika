@@ -1,8 +1,6 @@
 .section1 {
   background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   height: 632px;
   .section-container {
     max-width: 1087px;
@@ -11,11 +9,26 @@
     align-items: center;
     margin-top: 71px;
 
+    @media (max-width: $ipad-width) {
+      height: 346px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
     .div1 {
       width: 398px;
       display: flex;
       flex-direction: column;
-      margin-right: 181px;
+
+      @media (max-width: $ipad-width) {
+        max-width: 398px;
+        width: 100%;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+      }
       .new-product {
         font-size: 14px;
         color: #979797;
@@ -41,6 +54,23 @@
         color: white;
         font-size: 13px;
         margin-top: 40px;
+      }
+    }
+    .section1-innerdiv2 {
+      .inerdiv2-img {
+        width: 100%;
+      }
+
+      @media (max-width: $ipad-width) {
+        max-width: 581px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+    @media (max-width: $ipad-width) {
+      .section1-innerdiv2 {
+        width: 581px;
       }
     }
   }

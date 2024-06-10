@@ -6,8 +6,7 @@ body {
       height: 100px;
       margin: 0 auto;
       background-color: black;
-      display: flex;
-      justify-content: center;
+      @extend %flex;
 
       .header-content {
         max-width: 1110px;
@@ -16,10 +15,15 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: $ipad-width) {
+          max-width: 689px;
+          width: 100%;
+        }
       }
 
       .navigation {
-        @media (max-width: 700px) {
+        @media (max-width: $ipad-width) {
           display: none;
         }
 

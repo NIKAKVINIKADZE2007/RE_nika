@@ -1,31 +1,52 @@
 .section2 {
-  display: flex;
-  justify-content: center;
+  @extend %flex;
   margin: 200px 0px 112px;
   .section2-container {
     max-width: 1110px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    @media (max-width: $ipad-width) {
+      max-width: 689px;
+      width: 100%;
+    }
     .inner-div {
-      width: 350px;
       height: 204px;
+      max-width: 350px;
+      width: 100%;
       background-color: #f1f1f1;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
       align-items: center;
       position: relative;
+
+      @media (max-width: $ipad-width) {
+        max-width: 223px;
+        width: 100%;
+        max-height: 165px;
+      }
+
       img {
         position: absolute;
         bottom: 124px;
-        left: 113px;
+
+        @media (max-width: $ipad-width) {
+          max-width: 80px;
+          width: 100%;
+        }
       }
+
       h3 {
         color: #000000;
         font-size: 18px;
         font-weight: bold;
         margin: 116px 0px 15px;
+
+        @media (max-width: $ipad-width) {
+          font-size: 15px;
+          margin: 88px 0px 17px;
+        }
       }
       .innerdiv2 {
         display: flex;
