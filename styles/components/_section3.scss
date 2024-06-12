@@ -8,6 +8,17 @@
     align-items: center;
     justify-content: space-around;
 
+    @media (max-width: $ipad-width) {
+      flex-direction: column;
+      height: 633px;
+      max-width: 689px;
+      width: 100%;
+      margin: 0px 40px;
+    }
+    @media (max-width: $phone-width) {
+      max-width: 327px;
+      margin: 0px 24px;
+    }
     .section3-innerdiv1 {
       height: 295px;
       flex: 40%;
@@ -17,10 +28,26 @@
       text-align: left;
       margin-right: 125px;
 
+      @media (max-width: $ipad-width) {
+        order: 1;
+        text-align: center;
+        align-items: center;
+        margin: 63px 0px 0px;
+        max-width: 573px;
+      }
+
+      @media (max-width: $phone-width) {
+        margin: 40px 0px 0px;
+      }
+
       .innerdiv1-p1 {
         font-size: 40px;
         font-weight: bold;
         flex: 40%;
+
+        @media (max-width: $ipad-width) {
+          margin-bottom: 32px;
+        }
       }
 
       .innerdiv1-p1-span {
@@ -36,6 +63,24 @@
 
     .section3-innerdiv2 {
       flex: 50%;
+
+      img {
+        width: 100%;
+        max-width: 689px;
+        height: 100%;
+      }
+
+      @media (max-width: $ipad-width) {
+        height: 300px;
+        max-width: 689px;
+        width: 100%;
+      }
+
+      @media (max-width: $phone-width) {
+        height: 300px;
+        max-width: 327px;
+        width: 100%;
+      }
     }
   }
 }

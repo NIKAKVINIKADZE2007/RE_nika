@@ -8,12 +8,14 @@
     display: flex;
     align-items: center;
     margin-top: 71px;
-
+    overflow: hidden;
     @media (max-width: $ipad-width) {
-      height: 346px;
+      height: 639px;
       position: relative;
       justify-content: center;
       align-items: center;
+    }
+    @media (max-width: $phone-width) {
     }
 
     .div1 {
@@ -24,10 +26,13 @@
       @media (max-width: $ipad-width) {
         max-width: 398px;
         width: 100%;
-        flex: 1;
         align-items: center;
         text-align: center;
         z-index: 2;
+      }
+
+      @media (max-width: $phone-width) {
+        width: 100%;
       }
       .new-product {
         font-size: 14px;
@@ -39,6 +44,9 @@
         font-weight: bold;
         font-size: 56px;
         margin-top: 24px;
+        @media (max-width: $phone-width) {
+          font-size: 36px;
+        }
       }
 
       .expirience {
@@ -59,18 +67,24 @@
     .section1-innerdiv2 {
       .inerdiv2-img {
         width: 100%;
+        height: 100%;
+        max-width: 581px;
+        flex: 100%;
       }
 
       @media (max-width: $ipad-width) {
-        max-width: 581px;
-        position: absolute;
+        height: 100%;
         width: 100%;
+        position: absolute;
         z-index: 1;
+        flex: 1;
       }
     }
     @media (max-width: $ipad-width) {
       .section1-innerdiv2 {
-        width: 581px;
+        .inerdiv2-img {
+          width: 100%;
+        }
       }
     }
   }
