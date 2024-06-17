@@ -1,0 +1,15 @@
+.section1 {
+  background-color: $primary-color;
+  height: 239px;
+  @extend %flex;
+  margin-bottom: 160px;
+  .section1-container {
+    max-width: 1087px;
+    height: 476px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}

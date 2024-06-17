@@ -17,6 +17,7 @@
     }
     @media (max-width: $phone-width) {
       max-width: 327px;
+      height: 698px;
       margin: 0px 24px;
     }
     .section3-innerdiv1 {
@@ -47,6 +48,11 @@
 
         @media (max-width: $ipad-width) {
           margin-bottom: 32px;
+        }
+        @media (max-width: $phone-width) {
+          font-size: 28px;
+          flex: 30%;
+          margin-bottom: 0px;
         }
       }
 

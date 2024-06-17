@@ -170,10 +170,16 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-footer .footer-container, .section5 .section5-container, .section3, .section2, .section1, body header .header-container {
+footer .footer-container, .section2, .section1, body header .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section2 .section2-container #products-container, .section2 .section2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body header {
@@ -230,301 +236,51 @@ body header .underline {
 
 .section1 {
   background-color: #101010;
-  height: 632px;
+  height: 239px;
+  margin-bottom: 160px;
 }
-.section1 .section-container {
+.section1 .section1-container {
   max-width: 1087px;
   height: 476px;
   display: flex;
   align-items: center;
-  margin-top: 71px;
-  overflow: hidden;
-}
-@media (max-width: 768px) {
-  .section1 .section-container {
-    height: 639px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.section1 .section-container .div1 {
-  width: 398px;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 768px) {
-  .section1 .section-container .div1 {
-    max-width: 398px;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-  }
-}
-@media (max-width: 375px) {
-  .section1 .section-container .div1 {
-    width: 100%;
-  }
-}
-.section1 .section-container .div1 .new-product {
-  font-size: 14px;
-  color: #979797;
-}
-.section1 .section-container .div1 .product-name {
   color: white;
+  font-size: 40px;
   font-weight: bold;
-  font-size: 56px;
-  margin-top: 24px;
-}
-@media (max-width: 375px) {
-  .section1 .section-container .div1 .product-name {
-    font-size: 36px;
-  }
-}
-.section1 .section-container .div1 .expirience {
-  width: 349px;
-  font-size: 15px;
-  color: #979797;
-  margin-top: 24px;
-}
-.section1 .section-container .div1 button {
-  width: 160px;
-  height: 48px;
-  background-color: #d87d4a;
-  color: white;
-  font-size: 13px;
-  margin-top: 40px;
-}
-.section1 .section-container .section1-innerdiv2 .inerdiv2-img {
-  width: 100%;
-  height: 100%;
-  max-width: 581px;
-  flex: 100%;
-}
-@media (max-width: 768px) {
-  .section1 .section-container .section1-innerdiv2 {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    flex: 1;
-  }
-}
-@media (max-width: 768px) {
-  .section1 .section-container .section1-innerdiv2 .inerdiv2-img {
-    width: 100%;
-  }
 }
 
 .section2 {
-  margin: 200px 0px 112px;
+  margin-bottom: 146px;
 }
 .section2 .section2-container {
   max-width: 1110px;
+  height: 1411px;
   width: 100%;
+}
+.section2 .section2-container #products-container {
+  height: 1280px;
+}
+.section2 .section2-container #products-container div {
   display: flex;
+  align-items: center;
+}
+.section2 .section2-container #products-container div div {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin-left: 125px;
+  align-items: flex-start;
 }
-@media (max-width: 768px) {
-  .section2 .section2-container {
-    max-width: 689px;
-    width: 100%;
-    margin: 0px 40px 0px;
-  }
-}
-@media (max-width: 375px) {
-  .section2 .section2-container {
-    height: 683px;
-    max-width: 327px;
-    width: 100%;
-    flex-direction: column;
-    margin: 0px 24px 0px;
-  }
-}
-.section2 .section2-container .inner-div {
-  height: 204px;
-  max-width: 350px;
-  width: 100%;
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.section2 .section2-container .inner-div img {
-  position: absolute;
-  bottom: 124px;
-}
-@media (max-width: 768px) {
-  .section2 .section2-container .inner-div img {
-    max-width: 80px;
-    width: 100%;
-  }
-}
-.section2 .section2-container .inner-div h3 {
-  color: #000000;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 116px 0px 15px;
-}
-@media (max-width: 768px) {
-  .section2 .section2-container .inner-div h3 {
-    font-size: 15px;
-    margin: 88px 0px 17px;
-  }
-}
-.section2 .section2-container .inner-div .innerdiv2 {
-  display: flex;
-  align-items: center;
-}
-.section2 .section2-container .inner-div .innerdiv2 .shop {
-  color: #000000;
-  opacity: 0.5;
-  margin-right: 18px;
-}
-
-.section3 .section3-container {
-  max-width: 1110px;
-  width: 100%;
-  height: 588px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-@media (max-width: 768px) {
-  .section3 .section3-container {
-    flex-direction: column;
-    height: 633px;
-    max-width: 689px;
-    width: 100%;
-    margin: 0px 40px;
-  }
-}
-@media (max-width: 375px) {
-  .section3 .section3-container {
-    max-width: 327px;
-    height: 698px;
-    margin: 0px 24px;
-  }
-}
-.section3 .section3-container .section3-innerdiv1 {
-  height: 295px;
-  flex: 40%;
-  display: flex;
-  flex-direction: column;
-  color: #000000;
-  text-align: left;
-  margin-right: 125px;
-}
-@media (max-width: 768px) {
-  .section3 .section3-container .section3-innerdiv1 {
-    order: 1;
-    text-align: center;
-    align-items: center;
-    margin: 63px 0px 0px;
-    max-width: 573px;
-  }
-}
-@media (max-width: 375px) {
-  .section3 .section3-container .section3-innerdiv1 {
-    margin: 40px 0px 0px;
-  }
-}
-.section3 .section3-container .section3-innerdiv1 .innerdiv1-p1 {
+.section2 .section2-container #products-container div div .title {
   font-size: 40px;
   font-weight: bold;
-  flex: 40%;
-}
-@media (max-width: 768px) {
-  .section3 .section3-container .section3-innerdiv1 .innerdiv1-p1 {
-    margin-bottom: 32px;
-  }
-}
-@media (max-width: 375px) {
-  .section3 .section3-container .section3-innerdiv1 .innerdiv1-p1 {
-    font-size: 28px;
-    flex: 30%;
-    margin-bottom: 0px;
-  }
-}
-.section3 .section3-container .section3-innerdiv1 .innerdiv1-p1-span {
-  color: #d87d4a;
-}
-.section3 .section3-container .section3-innerdiv1 .innerdiv1-p2 {
-  flex: 60%;
-  font-size: 15px;
-  opacity: 0.5;
-}
-.section3 .section3-container .section3-innerdiv2 {
-  flex: 50%;
-}
-.section3 .section3-container .section3-innerdiv2 img {
-  width: 100%;
-  max-width: 689px;
-  height: 100%;
-}
-@media (max-width: 768px) {
-  .section3 .section3-container .section3-innerdiv2 {
-    height: 300px;
-    max-width: 689px;
-    width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .section3 .section3-container .section3-innerdiv2 {
-    height: 300px;
-    max-width: 327px;
-    width: 100%;
-  }
-}
-
-.section5 {
-  margin: 120px 0px 256px;
-}
-.section5 .section5-container {
-  max-width: 1440px;
-}
-.section5 .section5-container .section5-content {
-  max-width: 1110px;
-  height: 312px;
-  width: 100%;
-}
-.section5 .section5-container .section5-content .section5-header {
+  margin-bottom: 32px;
   color: #000000;
-  font-weight: bold;
-  font-size: 48px;
-  font-family: "Noto Sans Georgian";
-  font-weight: 900;
 }
-.section5 .section5-container .section5-content .time-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  height: 300px;
-  margin-top: 48px;
-}
-.section5 .section5-container .section5-content .time-container .time-div {
-  flex: 0.227;
-  height: 199px;
-  border-radius: 22px;
-  background-color: #101010;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.section5 .section5-container .section5-content .time-container .time-div .time-left {
-  color: white;
-  font-size: 64px;
-  font-weight: 900;
-  margin-bottom: 15px;
-}
-.section5 .section5-container .section5-content .time-container .time-div .days {
-  color: white;
-  font-weight: lighter;
+.section2 .section2-container #products-container div div .description {
+  font-size: 15px;
+  color: #000000;
+  opacity: 0.5;
 }
 
 footer {
@@ -709,4 +465,4 @@ footer .footer-container .footer-content .div3 .socials-ul svg path:hover {
 }
 footer .footer-container .footer-content .div3 .socials-ul .li {
   margin-right: 16px;
-}/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=products.css.map */

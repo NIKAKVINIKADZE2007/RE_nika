@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="/styles/products.css" />
     <title>Document</title>
   </head>
   <body>
@@ -40,150 +40,17 @@
     </header>
 
     <section class="section1">
-      <div class="section-container">
-        <div class="div1">
-          <p class="new-product">NEW PRODUCT</p>
-          <p class="product-name">XX99 Mark II Headphones</p>
-          <p class="expirience">
-            Experience natural, lifelike audio and exceptional build quality
-            made for the passionate music enthusiast.
-          </p>
-          <button>See Product</button>
-        </div>
-
-        <div class="section1-innerdiv2">
-          <img
-            class="inerdiv2-img"
-            src="./assets/img/headphones 1.webp"
-            alt="headpones"
-          />
-        </div>
+      <div class="section1-container">
+        <h1>PRODUCTS</h1>
       </div>
     </section>
 
     <section class="section2">
       <div class="section2-container">
-        <div class="inner-div">
-          <img
-            src="./assets/img/image-removebg-preview(41).webp"
-            alt="headpnoes"
-          />
-          <h3>HEADPHONES</h3>
-          <div class="innerdiv2">
-            <p class="shop">Shop</p>
-            <svg
-              width="8"
-              height="12"
-              viewBox="0 0 8 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.32178 1L6.32178 6L1.32178 11"
-                stroke="#D87D4A"
-                stroke-width="2"
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div id="div" class="inner-div">
-          <img
-            src="./assets/img/image-removebg-preview(38) (1).webp"
-            alt="speakers"
-          />
-          <h3>SPEAKERS</h3>
-          <div class="innerdiv2">
-            <p class="shop">Shop</p>
-            <svg
-              width="8"
-              height="12"
-              viewBox="0 0 8 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.32178 1L6.32178 6L1.32178 11"
-                stroke="#D87D4A"
-                stroke-width="2"
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div class="inner-div">
-          <img
-            src="./assets/img/image-removebg-preview(42).webp"
-            alt="EARPHONES"
-          />
-          <h3>EARPHONES</h3>
-          <div class="innerdiv2">
-            <p class="shop">Shop</p>
-            <svg
-              width="8"
-              height="12"
-              viewBox="0 0 8 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.32178 1L6.32178 6L1.32178 11"
-                stroke="#D87D4A"
-                stroke-width="2"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section3">
-      <div class="section3-container">
-        <div class="section3-innerdiv1">
-          <p class="innerdiv1-p1">
-            BRINGING YOU THE <span class="innerdiv1-p1-span"> BEST</span> AUDIO
-            GEAR
-          </p>
-          <p class="innerdiv1-p2">
-            Located at the heart of New York City, Audiophile is the premier
-            store for high end headphones, earphones, speakers, and audio
-            accessories. We have a large showroom and luxury demonstration rooms
-            available for you to browse and experience a wide range of our
-            products. Stop by our store to meet some of the fantastic people who
-            make Audiophile the best place to buy your portable audio equipment.
-          </p>
-        </div>
-        <div class="section3-innerdiv2">
-          <img src="./assets/img/Bitmap (5).webp" alt="guy-with-headpnoes" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section5">
-      <div class="section5-container">
-        <div class="section5-content">
-          <p class="section5-header">Big Summer Sale</p>
-          <div class="time-container">
-            <div class="time-div">
-              <p class="time-left" id="days">26</p>
-              <p class="days">DAYS</p>
-            </div>
-
-            <div class="time-div">
-              <p class="time-left" id="hours">0</p>
-              <p class="days">HOURS</p>
-            </div>
-
-            <div class="time-div">
-              <p class="time-left" id="minutes">0</p>
-              <p class="days">MUNUTES</p>
-            </div>
-
-            <div class="time-div">
-              <p class="time-left" id="seconds">0</p>
-              <p class="days">SECONDS</p>
-            </div>
-          </div>
+        <div id="products-container"></div>
+        <div>
+          <button id="prev-button">previeus</button>
+          <button id="next-button">next</button>
         </div>
       </div>
     </section>
@@ -275,6 +142,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/products.js"></script>
   </body>
 </html>
