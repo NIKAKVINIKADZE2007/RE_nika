@@ -485,6 +485,7 @@ body header .underline {
 }
 .section5 .section5-container {
   max-width: 1440px;
+  margin: 0 auto;
 }
 .section5 .section5-container .section5-content {
   max-width: 1110px;

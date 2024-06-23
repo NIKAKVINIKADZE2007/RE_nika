@@ -1,0 +1,214 @@
+.section1 {
+  margin-top: 79px;
+  margin-bottom: 150px;
+
+  .section1-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    @extend %flex;
+
+    .section1-content {
+      max-width: 1110px;
+      height: 1871px;
+      width: 100%;
+      @extend %flex-column;
+
+      @media (max-width: $ipad-width) {
+        max-width: 689px;
+        height: 1417px;
+        width: 100%;
+      }
+
+      .div1 {
+        width: 100%;
+        height: 641px;
+
+        @media (max-width: $ipad-width) {
+          max-width: 689px;
+          width: 100%;
+          height: 480px;
+        }
+
+        .goback {
+          width: 60px;
+          height: 25px;
+          border: none;
+          background-color: #f7f7f7;
+          opacity: 0.5;
+          font-size: 15px;
+          margin-bottom: 56px;
+
+          a {
+            color: $main-font-color !important;
+          }
+        }
+
+        .innerdiv-1 {
+          @include flexContainer(space-between, center);
+
+          #product-img {
+            max-width: 540px;
+            width: 100%;
+
+            @media (max-width: $ipad-width) {
+              max-width: 281px;
+              width: 100%;
+              height: 480px;
+            }
+          }
+
+          .div1 {
+            max-width: 445px;
+            height: 372px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: $ipad-width) {
+              max-width: 339px;
+              width: 100%;
+              height: 390px;
+            }
+
+            .name,
+            .catagory {
+              font-size: 40px;
+              font-weight: bold;
+              color: $main-font-color;
+
+              @media (max-width: $ipad-width) {
+                font-size: 28px;
+              }
+            }
+
+            .description {
+              font-size: 15px;
+              color: #000000;
+              opacity: 0.5;
+              margin: 32px 0px;
+            }
+
+            .price {
+              font-size: 18px;
+              font-weight: bold;
+              color: $main-font-color;
+              margin-bottom: 47px;
+            }
+            .innerdiv-2 {
+              max-width: 296px;
+              width: 100%;
+              height: 48px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .Div {
+                width: 120px;
+                height: 48px;
+                background-color: #f1f1f1;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .minusbtn,
+                .pliusbtn {
+                  border: none;
+                  color: $main-font-color;
+                  opacity: 0.25;
+                }
+              }
+
+              .add-button {
+                max-width: 160px;
+                width: 100%;
+                height: 48px;
+                background-color: #d87d4a;
+                color: white;
+                font-size: 13px;
+                font-weight: bold;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+      .innerdiv2 {
+        max-width: 635px;
+        width: 100%;
+        height: 318px;
+
+        @media (max-width: $ipad-width) {
+          max-width: 689px;
+          height: 318px;
+          width: 100%;
+        }
+
+        .features {
+          font-size: 32px;
+          font-weight: bold;
+          color: $main-font-color;
+          margin-bottom: 32px;
+        }
+
+        .features-text1 {
+          margin-bottom: 20px;
+        }
+
+        .features-text1,
+        .features-text2 {
+          font-size: 15px;
+          color: $main-font-color;
+          opacity: 0.5;
+        }
+      }
+
+      .innerdiv3 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 592px;
+
+        @media (max-width: $ipad-width) {
+          max-width: 690px;
+          width: 100%;
+          height: 368px;
+        }
+
+        .div1 {
+          max-width: 445px;
+          width: 100%;
+          height: 592px;
+          @extend %flex-column;
+
+          @media (max-width: $ipad-width) {
+            max-width: 277px;
+            width: 100%;
+            height: 368px;
+          }
+
+          img {
+            max-width: 445px;
+            width: 100%;
+            height: 280px;
+
+            @media (max-width: $ipad-width) {
+              max-width: 277px;
+              width: 100%;
+              height: 174px;
+            }
+          }
+        }
+
+        #img2 {
+          max-width: 635px;
+
+          @media (max-width: $ipad-width) {
+            max-width: 395px;
+            width: 100%;
+            height: 368px;
+          }
+        }
+      }
+    }
+  }
+}

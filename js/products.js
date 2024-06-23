@@ -77,5 +77,9 @@ function displayproducts(data) {
     div.classList.add('products-div');
     container.appendChild(div);
     prevbtn.classList.add('dispalaynone');
+
+    seemore.addEventListener('click', function () {
+      window.location.href = `product.html?id=${element.id}`;
+    });
   });
 }

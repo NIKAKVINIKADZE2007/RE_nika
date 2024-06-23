@@ -9,3 +9,8 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+%column {
+  display: flex;
+  flex-direction: column;
+}
