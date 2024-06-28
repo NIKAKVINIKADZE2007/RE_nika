@@ -3,7 +3,7 @@ let limit = 2;
 let container = document.getElementById('products-container');
 let prevbtn = document.getElementById('prev-button');
 let nextbtn = document.getElementById('next-button');
-
+AOS.init();
 fetch('./js/audio_products.json')
   .then((res) => res.json())
   .then((data) => {

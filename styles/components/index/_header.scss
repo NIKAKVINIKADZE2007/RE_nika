@@ -1,6 +1,8 @@
 body {
   header {
     background-color: $primary-color;
+    z-index: 2;
+    position: relative;
     .header-container {
       max-width: 1440px;
       height: 100px;
@@ -51,7 +53,18 @@ body {
           }
         }
       }
+
+      .div3 {
+        .shopcart {
+          path {
+            &:hover {
+              fill: #d87d4a;
+            }
+          }
+        }
+      }
     }
+
     .underline {
       max-width: 1110px;
       width: 100%;

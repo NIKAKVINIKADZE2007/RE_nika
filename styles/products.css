@@ -184,6 +184,8 @@ footer .footer-container, .section1, body header .header-container {
 
 body header {
   background-color: #101010;
+  z-index: 2;
+  position: relative;
 }
 body header .header-container {
   max-width: 1440px;
@@ -225,6 +227,9 @@ body header .header-container .navigation nav ul li a {
 }
 body header .header-container .navigation nav ul li a:hover {
   color: #d87d4a;
+}
+body header .header-container .div3 .shopcart path:hover {
+  fill: #d87d4a;
 }
 body header .underline {
   max-width: 1110px;

@@ -19,6 +19,12 @@
         width: 100%;
       }
 
+      @media (max-width: $phone-width) {
+        max-width: 327px;
+        width: 100%;
+        height: 2541px;
+      }
+
       .div1 {
         width: 100%;
         height: 641px;
@@ -27,6 +33,12 @@
           max-width: 689px;
           width: 100%;
           height: 480px;
+        }
+
+        @media (max-width: $phone-width) {
+          max-width: 327px;
+          width: 100%;
+          height: 769px;
         }
 
         .goback {
@@ -46,6 +58,13 @@
         .innerdiv-1 {
           @include flexContainer(space-between, center);
 
+          @media (max-width: $phone-width) {
+            width: 100%;
+            max-width: 689px;
+            height: 720px;
+            flex-direction: column;
+          }
+
           #product-img {
             max-width: 540px;
             width: 100%;
@@ -54,6 +73,12 @@
               max-width: 281px;
               width: 100%;
               height: 480px;
+            }
+
+            @media (max-width: $phone-width) {
+              max-width: 327px;
+              width: 100%;
+              height: 327px;
             }
           }
 
@@ -68,6 +93,12 @@
               max-width: 339px;
               width: 100%;
               height: 390px;
+            }
+
+            @media (max-width: $phone-width) {
+              width: 100%;
+              max-width: 327px;
+              height: 353px;
             }
 
             .name,
@@ -115,6 +146,13 @@
                   border: none;
                   color: $main-font-color;
                   opacity: 0.25;
+                  font-size: 13px;
+                }
+                .quantityinput {
+                  width: 30px;
+                  background-color: inherit;
+                  height: 16px;
+                  border: none;
                 }
               }
 
@@ -170,13 +208,17 @@
 
         @media (max-width: $ipad-width) {
           max-width: 690px;
-          width: 100%;
           height: 368px;
+        }
+
+        @media (max-width: $phone-width) {
+          flex-direction: column;
+          max-width: 327px;
+          height: 756px;
         }
 
         .div1 {
           max-width: 445px;
-          width: 100%;
           height: 592px;
           @extend %flex-column;
 
@@ -184,6 +226,11 @@
             max-width: 277px;
             width: 100%;
             height: 368px;
+          }
+
+          @media (max-width: $phone-width) {
+            max-width: 327px;
+            width: 100%;
           }
 
           img {
@@ -196,15 +243,24 @@
               width: 100%;
               height: 174px;
             }
+
+            @media (max-width: $phone-width) {
+              max-width: 327px;
+              width: 100%;
+            }
           }
         }
 
         #img2 {
-          max-width: 635px;
+          flex: 0.6;
 
           @media (max-width: $ipad-width) {
             max-width: 395px;
             width: 100%;
+            height: 368px;
+          }
+
+          @media (max-width: $phone-width) {
             height: 368px;
           }
         }

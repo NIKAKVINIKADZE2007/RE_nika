@@ -2,6 +2,7 @@
 // let hours = document.getElementById('hours');
 // let minuts = document.getElementById('minutes');
 // let seconds = document.getElementById('seconds');
+AOS.init();
 let seconds = 0;
 let minutes = 0;
 let hours = 0;

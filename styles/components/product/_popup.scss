@@ -1,0 +1,134 @@
+.pop-up {
+  width: 377px;
+  display: flex !important;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: 131px;
+  right: 165px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .div1 {
+    margin: 32px 0px;
+    @include flexContainer(space-between, center);
+    width: 313px;
+    height: 25px;
+    color: $main-font-color;
+    font-weight: bold;
+    font-size: 18px;
+
+    .removeall {
+      border: none;
+      background-color: inherit;
+      font-size: 15px;
+    }
+  }
+  .productsdiv {
+    width: 313px;
+    margin-bottom: 32px;
+
+    .productdiv {
+      width: 313px;
+      height: 64px;
+      @include flexContainer(space-between, center);
+
+      .innerdiv1 {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 64px;
+          height: 64px;
+          margin-right: 16px;
+        }
+
+        .Div1 {
+          display: flex;
+          flex-direction: column;
+
+          .name {
+            color: $main-font-color;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      .Div2 {
+        display: flex;
+        align-items: center;
+        color: $main-font-color;
+        font-size: 13px;
+        font-weight: bold;
+
+        p {
+          margin-right: 13px;
+        }
+
+        button {
+          border: none;
+          width: 60px;
+          height: 32px;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+    .productdiv:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .div3 {
+    width: 313px;
+    height: 25px;
+    margin-bottom: 24px;
+    @extend %flex-row;
+
+    .total {
+      font-weight: bold;
+      font-size: 15px;
+      opacity: 0.5;
+    }
+
+    .totalprice {
+      color: #000000;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .checkout {
+    width: 313px;
+    height: 48px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    background-color: #d87d4a;
+    border: none;
+    margin-bottom: 30px;
+
+    &:hover {
+      background-color: #fbaf85;
+    }
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: $main-font-color;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  display: block;
+}
+
+.dispaynone {
+  display: none !important;
+}
+.no-scroll {
+  overflow: hidden;
+}
