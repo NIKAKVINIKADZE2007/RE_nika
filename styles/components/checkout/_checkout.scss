@@ -1,0 +1,821 @@
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  margin: 79px 0px 245px;
+
+  .section1-container {
+    max-width: 1440px;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+
+    .section1-content {
+      max-width: 1110px;
+      width: 100%;
+      margin: 0 auto;
+      @extend %column;
+      justify-content: space-between;
+
+      @media (max-width: $ipad-width) {
+        max-width: 689px;
+        width: 100%;
+      }
+
+      @media (max-width) {
+        max-width: 327px;
+        width: 100%;
+      }
+
+      .goback {
+        width: 60px;
+        height: 25px;
+        border: none;
+        background-color: #f7f7f7;
+        opacity: 0.5;
+        font-size: 15px;
+        margin-bottom: 56px;
+      }
+
+      .main-container {
+        max-width: 1110px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        @media (max-width: $ipad-width) {
+          max-width: 689px;
+          width: 100%;
+          height: fit-content;
+          flex-direction: column;
+        }
+
+        .div1-container {
+          max-width: 730px;
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          justify-content: center;
+          background-color: white;
+
+          @media (max-width: $ipad-width) {
+            max-width: 689px;
+            width: 100%;
+          }
+
+          @media (max-width: $phone-width) {
+            flex-direction: row;
+            justify-content: center;
+          }
+
+          .div1 {
+            max-width: 635px;
+            width: 100%;
+            height: fit-content;
+            @extend %column;
+            background-color: white;
+            margin-top: 77px;
+
+            @media (max-width: $phone-width) {
+              max-width: 327px;
+              width: 100%;
+            }
+
+            .checkout {
+              font-size: 32px;
+              font-weight: bold;
+              color: $main-font-color;
+              margin-bottom: 41px;
+
+              @media (max-width: $phone-width) {
+                font-size: 28px;
+              }
+            }
+
+            .innerdiv1 {
+              @extend %column;
+
+              @media (max-width: $phone-width) {
+                height: fit-content;
+              }
+
+              .div-header {
+                @extend %label-header;
+              }
+              .name-phone-div {
+                height: fit-content;
+
+                @media (max-width: $phone-width) {
+                  max-width: 280px;
+                  row-gap: 24px;
+                }
+                .Div1 {
+                  display: flex;
+                  justify-content: space-between;
+                  max-width: 634px;
+                  width: 100%;
+                  height: 84px;
+                  margin: 8px 0px 24px;
+
+                  @media (max-width: $phone-width) {
+                    flex-direction: column;
+                  }
+
+                  @media (max-width: $phone-width) {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 280px;
+                    width: 100%;
+                    height: fit-content;
+                    row-gap: 24px;
+                    margin: 8px 0px 24p;
+                  }
+
+                  .innerDiv1 {
+                    @extend %column;
+                    max-width: 310px;
+                    width: 100%;
+                    height: 84px;
+
+                    .label {
+                      @extend %label;
+                    }
+
+                    .input {
+                      @extend %input-pc;
+                    }
+                  }
+                }
+              }
+              .Div2 {
+                display: flex;
+                flex-direction: column;
+                max-width: 310px;
+                width: 100%;
+                height: 84px;
+
+                .label {
+                  @extend %label;
+                }
+
+                .input {
+                  @extend %input-pc;
+                }
+              }
+            }
+
+            .innerdiv2 {
+              height: fit-content;
+              margin-top: 61px;
+
+              .div-header {
+                @extend %label-header;
+                margin-bottom: 10px;
+              }
+
+              .div-container {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                row-gap: 24px;
+
+                .firstdiv {
+                  width: 100%;
+                  height: 84px;
+                  display: flex;
+                  flex-direction: column;
+                  margin-top: 10px;
+
+                  @media (max-width: $phone-width) {
+                    max-width: 280px;
+                    width: 100%;
+                  }
+
+                  .label {
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #000000;
+                    margin-bottom: 9px;
+                  }
+                  .input {
+                    height: 58px;
+                    padding-left: 24px;
+                    border: 1px solid #cfcfcf;
+                    border-radius: 8px;
+
+                    &::placeholder {
+                      color: $main-font-color;
+                      opacity: 0.4;
+                      font-weight: bold;
+                    }
+                  }
+                }
+
+                .second-div {
+                  @extend %flex-row;
+                  width: 100%;
+                  height: 84px;
+
+                  @media (max-width: $phone-width) {
+                    max-width: 280px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    height: fit-content;
+                    row-gap: 24px;
+                  }
+
+                  .Zip-div {
+                    @extend %column;
+                    max-width: 309px;
+                    width: 100%;
+
+                    .label {
+                      @extend %label;
+                    }
+
+                    .input {
+                      @extend %input-pc;
+                    }
+                  }
+
+                  .city-div {
+                    @extend %column;
+                    max-width: 309px;
+                    width: 100%;
+
+                    .label {
+                      @extend %label;
+                    }
+
+                    .input {
+                      @extend %input-pc;
+                    }
+                  }
+                }
+
+                .country-div {
+                  @extend %column;
+                  max-width: 309px;
+                  width: 100%;
+
+                  @media (max-width: $phone-width) {
+                    max-width: 280px;
+                    width: 100%;
+                  }
+
+                  .label {
+                    @extend %label;
+                  }
+
+                  .input {
+                    @extend %input-pc;
+                  }
+                }
+              }
+            }
+
+            .innerdiv3 {
+              margin-top: 41px;
+              margin-bottom: 60px;
+
+              @media (max-width: $ipad-width) {
+                margin-top: 61px;
+                margin-bottom: 48px;
+              }
+
+              @media (max-width: $ipad-width) {
+                margin-top: 32px;
+                margin-bottom: 31px;
+              }
+
+              .header {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .div-header {
+                  font-size: 13px;
+                  font-weight: bold;
+                  color: $secondary-color;
+                }
+
+                .credit-card {
+                  font-weight: 500;
+                  color: $main-font-color;
+                  font-size: 13px;
+                  text-decoration: underline;
+                }
+              }
+
+              .creditcard-div {
+                @extend %column;
+                align-items: center;
+                height: fit-content;
+                max-width: 630px;
+                width: 100%;
+                margin-top: 30px;
+
+                @media (max-width: $ipad-width) {
+                  margin-top: 41px;
+                  display: flex;
+                  flex-direction: row;
+                  max-width: 689px;
+                  width: 100%;
+                  justify-content: space-between;
+                  order: 2;
+                }
+
+                @media (max-width: $phone-width) {
+                  display: flex;
+                  flex-direction: column;
+                  order: 2;
+                  row-gap: 32px;
+                }
+
+                .credit-card-img {
+                  margin-bottom: 41px;
+
+                  @media (max-width: $ipad-width) {
+                    max-width: 200px;
+                    width: 100%;
+                  }
+
+                  @media (max-width: $phone-width) {
+                    max-width: 220px;
+                    width: 100%;
+                    margin-bottom: 0px;
+                  }
+                }
+
+                .cardinfo-div {
+                  @extend %column;
+                  justify-content: space-between;
+                  max-width: 512px;
+                  width: 100%;
+                  height: 176px;
+
+                  @media (max-width: $ipad-width) {
+                    max-width: 309px;
+                    width: 100%;
+                    order: -1;
+                  }
+
+                  @media (max-width: $phone-width) {
+                    max-width: 280px;
+                    width: 100%;
+                  }
+
+                  .cardholder-name-div {
+                    @extend %column;
+
+                    .input {
+                      @extend %input-pc;
+                      height: 48px;
+                      color: #979797;
+                      padding-left: 16px;
+                      max-width: 512px;
+                    }
+                  }
+
+                  .creditcardsecond-div {
+                    max-width: 512px;
+                    width: 100%;
+                    height: 48px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .cvv-div {
+                      max-width: 248px;
+                      width: 100%;
+                      height: 48px;
+
+                      .input {
+                        @extend %input-pc;
+                        width: 100%;
+                        height: 48px;
+                        padding-left: 16px;
+
+                        @media (max-width: $ipad-width) {
+                          max-width: 140px;
+                          width: 100%;
+                        }
+
+                        @media (max-width: $phone-width) {
+                          max-width: 127px;
+                          width: 100%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .div2-container {
+          max-width: 350px;
+          width: 100%;
+          height: fit-content;
+
+          @media (max-width: $ipad-width) {
+            max-width: 689px;
+            width: 100%;
+          }
+
+          @media (max-width: $phone-width) {
+            display: flex;
+            justify-content: center;
+          }
+
+          .div2 {
+            max-width: 350px;
+            width: 100%;
+            @extend %column;
+            align-items: center;
+            background-color: #ffffff;
+
+            @media (max-width: $ipad-width) {
+              margin-top: 32px;
+              max-width: 689px;
+              width: 100%;
+            }
+
+            @media (max-width: $phone-width) {
+              max-width: 327px;
+              width: 100%;
+            }
+
+            .div2content {
+              max-width: 284px;
+              width: 100%;
+              @extend %column;
+
+              @media (max-width: $ipad-width) {
+                max-width: 623px;
+                width: 100%;
+              }
+
+              .summary {
+                font-size: 18px;
+                color: $main-font-color;
+                font-weight: bold;
+                margin: 32px 0px 31px;
+              }
+
+              .products-container {
+                @extend %column;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 32px;
+
+                .productdiv {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 100%;
+                  height: 64px;
+                  margin-bottom: 24px;
+
+                  .imgandpricediv {
+                    max-width: 155px;
+                    width: 100%;
+                    height: 64px;
+                    @extend %flex-row;
+
+                    .productimg {
+                      width: 64px;
+                      height: 64px;
+                    }
+
+                    .price-name-div {
+                      height: 50px;
+                      max-width: 75px;
+                      width: 100%;
+                      @extend %column;
+                      justify-content: space-between;
+
+                      .name {
+                        font-size: 15px;
+                        color: $main-font-color;
+                        font-weight: bold;
+                      }
+
+                      .price {
+                        font-size: 14px;
+                        color: $main-font-color;
+                        opacity: 0.5;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+
+                  .ammount {
+                    color: $main-font-color;
+                    opacity: 0.5;
+                    font-size: 15px;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              .totaldiv {
+                @extend %flex-row;
+                width: 100%;
+                margin-bottom: 8px;
+
+                .total {
+                  font-size: 15px;
+                  color: $main-font-color;
+                  opacity: 0.5;
+                }
+                .totalprice {
+                  font-weight: bold;
+                  font-size: 18px;
+                }
+              }
+
+              .shippingdiv {
+                @extend %flex-row;
+                width: 100%;
+
+                .total {
+                  font-size: 15px;
+                  color: $main-font-color;
+                  opacity: 0.5;
+                }
+
+                .totalprice {
+                  font-weight: bold;
+                  font-size: 18px;
+                }
+              }
+
+              .grandtotal {
+                @extend %flex-row;
+                width: 100%;
+                margin-bottom: 8px;
+                margin: 57px 0px 32px;
+
+                .total {
+                  font-size: 15px;
+                  color: $main-font-color;
+                  opacity: 0.5;
+                }
+                .grandtotalprice {
+                  font-weight: bold;
+                  font-size: 18px;
+                  color: $secondary-color;
+                }
+              }
+
+              .pay {
+                max-width: 284px;
+                height: 48px;
+                background-color: $secondary-color;
+                border: none;
+                color: white;
+                font-size: 13px;
+                font-weight: bold;
+                margin-bottom: 32px;
+
+                @media (max-width: $ipad-width) {
+                  max-width: 689px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: $main-font-color;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  display: none;
+}
+
+.show {
+  display: flex !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.verification-container {
+  width: 100vw;
+  height: fit-content;
+  display: none;
+  justify-content: center;
+  position: absolute;
+  border-radius: 8px;
+  top: 260px;
+
+  @media (max-width: $ipad-width) {
+    top: 200px;
+  }
+
+  .verification-div {
+    max-width: 540px;
+    width: 100%;
+    height: 504px;
+    z-index: 2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $ipad-width) {
+      max-width: 534px;
+      width: 100%;
+      height: 444px;
+    }
+
+    @media (max-width: $phone-width) {
+      max-width: 327px;
+      width: 100%;
+    }
+
+    .verification-content {
+      max-width: 444px;
+      width: 100%;
+      height: 395px;
+
+      @media (max-width: $ipad-width) {
+        height: 348px;
+      }
+
+      @media (max-width: $phone-width) {
+        max-width: 263px;
+        width: 100%;
+        height: 330px;
+      }
+
+      .thankyoufororder {
+        font-size: 32px;
+        font-weight: bold;
+        color: $main-font-color;
+        max-width: 284px;
+        width: 100%;
+        margin: 33px 0px 24px;
+      }
+
+      .you-will-recive {
+        font-size: 15px;
+        color: $main-font-color;
+        opacity: 0.5;
+        margin-bottom: 109px;
+
+        @media (max-width: $phone-width) {
+          margin-bottom: 81px;
+        }
+      }
+
+      .backtohome {
+        color: white;
+        background-color: $secondary-color;
+        font-size: 13px;
+        font-weight: bold;
+        width: 100%;
+        height: 48px;
+        border: none;
+      }
+    }
+  }
+}
+
+.pop-up {
+  width: 377px;
+  display: flex !important;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: 131px;
+  right: 165px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .div1 {
+    margin: 32px 0px;
+    @include flexContainer(space-between, center);
+    width: 313px;
+    height: 25px;
+    color: $main-font-color;
+    font-weight: bold;
+    font-size: 18px;
+
+    .removeall {
+      border: none;
+      background-color: inherit;
+      font-size: 15px;
+    }
+  }
+  .productsdiv {
+    width: 313px;
+    margin-bottom: 32px;
+
+    .productdiv {
+      width: 313px;
+      height: 64px;
+      @include flexContainer(space-between, center);
+
+      .innerdiv1 {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 64px;
+          height: 64px;
+          margin-right: 16px;
+        }
+
+        .Div1 {
+          display: flex;
+          flex-direction: column;
+
+          .name {
+            color: $main-font-color;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      .Div2 {
+        display: flex;
+        align-items: center;
+        color: $main-font-color;
+        font-size: 13px;
+        font-weight: bold;
+
+        p {
+          margin-right: 13px;
+        }
+
+        button {
+          border: none;
+          width: 60px;
+          height: 32px;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+    .productdiv:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .div3 {
+    width: 313px;
+    height: 25px;
+    margin-bottom: 24px;
+    @extend %flex-row;
+
+    .total {
+      font-weight: bold;
+      font-size: 15px;
+      opacity: 0.5;
+    }
+
+    .totalprice {
+      color: #000000;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .checkout {
+    width: 313px;
+    height: 48px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    background-color: $secondary-color;
+    border: none;
+    margin-bottom: 30px;
+
+    &:hover {
+      background-color: #fbaf85;
+    }
+  }
+}

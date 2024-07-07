@@ -55,13 +55,17 @@
         color: #979797;
         margin-top: 24px;
       }
-      button {
+      .see-product-btn {
         width: 160px;
         height: 48px;
-        background-color: #d87d4a;
+        background-color: $secondary-color;
         color: white;
         font-size: 13px;
         margin-top: 40px;
+
+        .see-product-button {
+          color: white;
+        }
       }
     }
     .section1-innerdiv2 {

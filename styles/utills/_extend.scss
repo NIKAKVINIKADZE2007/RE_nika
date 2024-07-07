@@ -20,3 +20,23 @@
   display: flex;
   flex-direction: column;
 }
+
+%label {
+  font-size: 12px;
+  font-weight: bold;
+  color: $main-font-color;
+  margin-bottom: 9px;
+}
+
+%input-pc {
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  padding-left: 24px;
+}
+
+%label-header {
+  font-size: 13px;
+  font-weight: bold;
+  color: #d87d4a;
+}

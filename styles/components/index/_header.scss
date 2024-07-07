@@ -23,42 +23,113 @@ body {
           width: 100%;
           margin: 0px 40px 0px;
         }
-      }
 
-      .navigation {
-        @media (max-width: $ipad-width) {
-          display: none;
-        }
+        .logo {
+          display: flex;
+          align-items: center;
 
-        nav {
-          ul {
+          @media (max-width: $ipad-width) {
+            max-width: 200px;
+            width: 100%;
             display: flex;
-            list-style: none;
-            font-size: 13px;
+            align-items: center;
+            justify-content: space-between;
+          }
 
-            .list-item {
-              margin-right: 50px;
+          .menu-btn {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 15px;
+            max-width: 16px;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+
+            @media (max-width: $ipad-width) {
+              display: flex;
             }
 
-            li {
-              a {
-                color: white;
-                font-size: 13px;
+            @media (max-width: $phone-width) {
+              display: flex;
+            }
 
-                &:hover {
-                  color: #d87d4a;
+            .menu-btn-burger {
+              width: 16px;
+              height: 3px;
+              background-color: white;
+              transition: all 0.5s ease-in-out;
+
+              &::after,
+              &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 3px;
+                background-color: white;
+                transition: all 0.5s ease-in-out;
+              }
+
+              &::before {
+                transform: translateY(-3px);
+              }
+
+              &::after {
+                transform: translateY(3px);
+              }
+            }
+          }
+
+          .menu-btn.open .menu-btn-burger {
+            transform: rotate(90deg);
+            background-color: transparent;
+            transition: all 0.5s ease-in-out;
+          }
+
+          .menu-btn.open .menu-btn-burger::after {
+            transform: rotate(45deg);
+          }
+
+          .menu-btn.open .menu-btn-burger::before {
+            transform: rotate(-45deg);
+          }
+        }
+
+        .navigation {
+          @media (max-width: $ipad-width) {
+            display: none;
+          }
+
+          nav {
+            ul {
+              display: flex;
+              list-style: none;
+              font-size: 13px;
+
+              .list-item {
+                margin-right: 50px;
+              }
+
+              li {
+                a {
+                  color: white;
+                  font-size: 13px;
+
+                  &:hover {
+                    color: $secondary-color;
+                  }
                 }
               }
             }
           }
         }
-      }
 
-      .div3 {
-        .shopcart {
-          path {
-            &:hover {
-              fill: #d87d4a;
+        .div3 {
+          .shopcart {
+            path {
+              &:hover {
+                fill: $secondary-color;
+              }
             }
           }
         }
@@ -73,4 +144,56 @@ body {
       background-color: #979797;
     }
   }
+
+  .burger-navigation {
+    max-width: 398px;
+    position: absolute;
+    top: 100px;
+    left: -400px;
+    width: 100%;
+    height: 804px;
+    background-color: $main-font-color;
+    transition: all 0.5s ease-in-out;
+    z-index: 4;
+
+    .burger-container {
+      margin: 0px 0px 0px 40px;
+      max-width: 344px;
+      width: 100%;
+      height: 266px;
+
+      .burger-content {
+        @extend %column;
+        height: 266px;
+
+        .content-div {
+          max-width: 345px;
+          width: 100%;
+          height: 77px;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            background-color: rgba(229, 229, 229, 0.11);
+          }
+
+          .content-name {
+            color: #e5e5e5;
+            font-size: 23px;
+            margin-left: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .burger-navigation.show {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }

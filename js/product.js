@@ -19,7 +19,7 @@ shopingcart.addEventListener('click', (event) => {
 overlay.addEventListener('click', () => {
   popup.classList.toggle('dispaynone');
   overlay.classList.toggle('dispaynone');
-  document.body.classList.add('no-scroll');
+  document.body.classList.remove('no-scroll');
 });
 
 AOS.init();
@@ -237,6 +237,10 @@ function update() {
   checkout.textContent = 'CHECKOUT';
   checkout.classList.add('checkout');
 
+  checkout.addEventListener('click', () => {
+    window.location.href = 'checkout.html';
+  });
+
   if (calculatetotalquantity(cart) == 0) {
     checkout.classList.add('dispaynone');
     prouctsdiv.classList.add('dispaynone');
@@ -254,3 +258,12 @@ function update() {
   popup.appendChild(div3);
   popup.appendChild(checkout);
 }
+
+let burger = document.querySelector('.menu-btn');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  document.querySelector('.burger-navigation').classList.toggle('show');
+  overlay.classList.toggle('dispaynone');
+  document.body.classList.toggle('no-scroll');
+});

@@ -62,7 +62,7 @@ footer {
             font-size: 13px;
 
             &:hover {
-              color: #d87d4a;
+              color: $secondary-color;
             }
           }
           .li-item {
@@ -162,7 +162,7 @@ footer {
           svg {
             path {
               &:hover {
-                fill: #d87d4a;
+                fill: $secondary-color;
               }
             }
           }

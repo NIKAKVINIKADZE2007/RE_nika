@@ -71,7 +71,7 @@
 
           .newproduct {
             font-size: 14px;
-            color: #d87d4a;
+            color: $secondary-color;
           }
 
           .title {
@@ -104,7 +104,7 @@
           .see-product {
             width: 160px;
             height: 48px;
-            background-color: #d87d4a;
+            background-color: $secondary-color;
             color: white;
             font-size: 13px;
             font-weight: bold;

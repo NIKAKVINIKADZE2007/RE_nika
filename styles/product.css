@@ -188,6 +188,11 @@ body {
   justify-content: space-between;
 }
 
+body .burger-navigation .burger-container .burger-content {
+  display: flex;
+  flex-direction: column;
+}
+
 body header {
   background-color: #101010;
   z-index: 2;
@@ -214,27 +219,91 @@ body header .header-container .header-content {
     margin: 0px 40px 0px;
   }
 }
+body header .header-container .header-content .logo {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 768px) {
-  body header .header-container .navigation {
+  body header .header-container .header-content .logo {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+body header .header-container .header-content .logo .menu-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  max-width: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  body header .header-container .header-content .logo .menu-btn {
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  body header .header-container .header-content .logo .menu-btn {
+    display: flex;
+  }
+}
+body header .header-container .header-content .logo .menu-btn .menu-btn-burger {
+  width: 16px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+body header .header-container .header-content .logo .menu-btn .menu-btn-burger::after, body header .header-container .header-content .logo .menu-btn .menu-btn-burger::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+body header .header-container .header-content .logo .menu-btn .menu-btn-burger::before {
+  transform: translateY(-3px);
+}
+body header .header-container .header-content .logo .menu-btn .menu-btn-burger::after {
+  transform: translateY(3px);
+}
+body header .header-container .header-content .logo .menu-btn.open .menu-btn-burger {
+  transform: rotate(90deg);
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+body header .header-container .header-content .logo .menu-btn.open .menu-btn-burger::after {
+  transform: rotate(45deg);
+}
+body header .header-container .header-content .logo .menu-btn.open .menu-btn-burger::before {
+  transform: rotate(-45deg);
+}
+@media (max-width: 768px) {
+  body header .header-container .header-content .navigation {
     display: none;
   }
 }
-body header .header-container .navigation nav ul {
+body header .header-container .header-content .navigation nav ul {
   display: flex;
   list-style: none;
   font-size: 13px;
 }
-body header .header-container .navigation nav ul .list-item {
+body header .header-container .header-content .navigation nav ul .list-item {
   margin-right: 50px;
 }
-body header .header-container .navigation nav ul li a {
+body header .header-container .header-content .navigation nav ul li a {
   color: white;
   font-size: 13px;
 }
-body header .header-container .navigation nav ul li a:hover {
+body header .header-container .header-content .navigation nav ul li a:hover {
   color: #d87d4a;
 }
-body header .header-container .div3 .shopcart path:hover {
+body header .header-container .header-content .div3 .shopcart path:hover {
   fill: #d87d4a;
 }
 body header .underline {
@@ -243,6 +312,50 @@ body header .underline {
   height: 1px;
   margin: 0 auto;
   background-color: #979797;
+}
+body .burger-navigation {
+  max-width: 398px;
+  position: absolute;
+  top: 100px;
+  left: -400px;
+  width: 100%;
+  height: 804px;
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+  z-index: 4;
+}
+body .burger-navigation .burger-container {
+  margin: 0px 0px 0px 40px;
+  max-width: 344px;
+  width: 100%;
+  height: 266px;
+}
+body .burger-navigation .burger-container .burger-content {
+  height: 266px;
+}
+body .burger-navigation .burger-container .burger-content .content-div {
+  max-width: 345px;
+  width: 100%;
+  height: 77px;
+  display: flex;
+  align-items: center;
+}
+body .burger-navigation .burger-container .burger-content .content-div:hover {
+  background-color: rgba(229, 229, 229, 0.11);
+}
+body .burger-navigation .burger-container .burger-content .content-div .content-name {
+  color: #e5e5e5;
+  font-size: 23px;
+  margin-left: 24px;
+}
+body .burger-navigation.show {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .section1 {
@@ -515,24 +628,36 @@ body header .underline {
 }
 
 .pop-up {
-  width: 377px;
+  max-width: 377px;
+  width: 100%;
   display: flex !important;
   border-radius: 8px;
   background-color: white;
   position: absolute;
   top: 131px;
   right: 165px;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .pop-up {
+    max-width: 377px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .pop-up .div1 {
   margin: 32px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 313px;
+  max-width: 313px;
+  width: 100%;
   height: 25px;
   color: #000000;
   font-weight: bold;
@@ -544,11 +669,13 @@ body header .underline {
   font-size: 15px;
 }
 .pop-up .productsdiv {
-  width: 313px;
+  max-width: 313px;
+  width: 100%;
   margin-bottom: 32px;
 }
 .pop-up .productsdiv .productdiv {
-  width: 313px;
+  max-width: 313px;
+  width: 100%;
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -584,7 +711,8 @@ body header .underline {
 }
 .pop-up .productsdiv .productdiv .Div2 button {
   border: none;
-  width: 60px;
+  max-width: 60px;
+  width: 100%;
   height: 32px;
   background-color: #f1f1f1;
 }
@@ -593,6 +721,7 @@ body header .underline {
 }
 .pop-up .div3 {
   width: 313px;
+  max-width: 100%;
   height: 25px;
   margin-bottom: 24px;
 }
@@ -607,7 +736,8 @@ body header .underline {
   font-size: 18px;
 }
 .pop-up .checkout {
-  width: 313px;
+  max-width: 313px;
+  width: 100%;
   height: 48px;
   font-size: 13px;
   color: white;
@@ -637,5 +767,5 @@ body header .underline {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow: hidden !important;
 }/*# sourceMappingURL=product.css.map */
